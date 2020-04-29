@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <style>
+            h1{
+                color: crimson;
+            }
+            
+            p{
+                background-color: none;
+            }
+
+            .row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column {
+  float: left;
+  width: 25%;
+}
+
+
+
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Caption text */
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+img.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+  
+
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  flex: 33.33%;
+  padding: 10px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+        </style>
+        <title> The Hoisington Gallery</title>
+       
+    </head>
+    <body>
+        <!-- Headings-->
+      
+        <h1>Our Milestones</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos, veritatis similique optio harum possimus minima quis fuga ipsum provident in! Accusamus cumque nemo natus itaque et atque quod quos in?
+        </p>
+        <h2>MISSION</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores quaerat numquam magni. Placeat, harum quasi reprehenderit ab vero molestiae nam autem, accusamus laboriosam fugiat, sequi odio molestias numquam reiciendis. Est?</p>
+       <br>
+       <h2>VISION</h2>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil corrupti quaerat unde nobis optio a provident, excepturi eos! Soluta quod dolore adipisci assumenda perspiciatis reprehenderit porro officiis ratione consectetur autem!</p>
+        <br>
+        <h1>Community Outreach Program</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore quos quasi excepturi laudantium ipsum est impedit assumenda autem doloribus deleniti aut, itaque error deserunt amet adipisci voluptas obcaecati, aperiam qui?</p>
+        <h2>Rebirth the Earth </h2>
+        <br>      
+        <div class="row">
+          <div class="column">
+            <img src="\images\plantatree2.jpg" alt="Snow" style="widows: 50%" height="19%">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore, ut. Doloremque ducimus nesciunt deserunt porro unde officia reiciendis dolore eos accusamus maxime. Qui hic laudantium, temporibus doloremque officiis veritatis quam!</p>
+          </div>
+          <div class="column">
+            <img src="\images\outreach1.jpg" alt="ricefield" style="widows: 70%" height="19%">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate iusto aliquid in ducimus excepturi, laborum similique corrupti tenetur odio! Maiores nulla debitis ipsam officia, distinctio placeat. Quam repellat molestias quibusdam?</p>
+          </div>
+          <div class="column">
+            <img src="\images\outreach3.jpg" alt="planting" style="widows: 70%" height="19%">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis tempore doloribus nostrum vitae cupiditate dolorem ullam deserunt fugit libero. Minima dolores alias omnis sed qui vero quibusdam asperiores ex architecto?</p>
+          </div>
+          <div class="column">
+            <img src="\images\communitylove.jpg" alt="planting" style="widows: 70%" height="19%">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ab provident, consequuntur blanditiis totam aut neque iste exercitationem necessitatibus asperiores explicabo ipsam minima ut officiis impedit autem? Alias, voluptas recusandae.</p>
+          </div>
+          <div class="column">
+            <img src="\images\communitypassion.jpg" alt="planting" style="widows: 40%" height="19%">
+            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto veritatis, animi harum eveniet delectus repellat explicabo unde iure, labore maxime vel est laborum praesentium in quia tempora. Blanditiis, molestias sed!</p>
+          </div>          
+          </div>
+        <H1>The Workforce</H1>
+        <h2>The Administrators</h2>
+        <div class="row">
+            <div class="column">
+              <img src="\images\RexSr.jpg" alt="Snow" style="widows: 50%" height="19%">
+              <h3><strong>Rex N. Esplanada Sr.</strong> </h3> 
+              <p class="title">Management Head</p>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore, ut. Doloremque ducimus nesciunt deserunt porro unde officia reiciendis dolore eos accusamus maxime. Qui hic laudantium, temporibus doloremque officiis veritatis quam!</p>
+
+            </div>
+            <div class="column">
+              <img src="\images\sally.jpg" alt="sally" style="widows: 70%" height="19%">
+              <h3><strong> Ma.Sally E. Apaga</strong> </h3>
+              <p class="title">Acquisition Head</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate iusto aliquid in ducimus excepturi, laborum similique corrupti tenetur odio! Maiores nulla debitis ipsam officia, distinctio placeat. Quam repellat molestias quibusdam?</p>
+            </div>
+            <div class="column">
+              <img src="\images\lindz.jpeg" alt="lindz" style="widows: 70%" height="19%">
+              <h3><strong>Lindsay Hoisington</strong></h3>
+            <p class="title">Finance Head</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis tempore doloribus nostrum vitae cupiditate dolorem ullam deserunt fugit libero. Minima dolores alias omnis sed qui vero quibusdam asperiores ex architecto?</p>
+            </div>
+            <div class="column">
+              <img src="\images\RexJr.jpg" alt="planting" style="widows: 70%" height="19%">
+              <h3><strong>Rexuz Esplanada</strong></h3>
+                <p class="title">Logistics Head</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ab provident, consequuntur blanditiis totam aut neque iste exercitationem necessitatibus asperiores explicabo ipsam minima ut officiis impedit autem? Alias, voluptas recusandae.</p>
+            </div>
+            <div class="column">
+              <img src="\images\Leilani.jpeg" alt="Leilani" style="widows: 40%" height="19%">
+              <h3><strong>Lailani C. Stone</strong></h3>
+              <p class="title">Event Management Head</p>
+              <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto veritatis, animi harum eveniet delectus repellat explicabo unde iure, labore maxime vel est laborum praesentium in quia tempora. Blanditiis, molestias sed!</p>
+            </div>
+            </div>           
+          </div> 
+          <h2>THE FOUNDERS</h2>
+              
+          
+          <br>
+          
+        <div class="container">
+           
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos unde, ipsum cumque amet est ipsam recusandae iusto voluptatibus deserunt minus aliquam. Delectus aliquam officiis eveniet excepturi nesciunt recusandae exercitationem reiciendis?</p>
+            <br><br><br>
+        <img src="\images\Scott.jpg" alt="babies" height="5%" width="50%">
+            <h3><strong>Scott E. Hoisington</strong></h3>
+            <p class="title">President CEO / Web Masters</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et excepturi soluta dolorem sunt culpa laboriosam at non, expedita esse ullam repudiandae veniam vitae nostrum. Veniam dicta totam sapiente sit! Nam!</p>
+        <br><br><br>
+        <img src="\images\Ruthie.jpeg" alt="babies" height="1%" width="50%">
+            <h3><strong>Ruthie E. Hoisington</strong></h3>
+            <p class="title">Vice President CEO / Web Masters</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quo vitae quibusdam laudantium, iure, eum distinctio blanditiis ipsa omnis sit modi atque optio dolorem non officiis pariatur quam harum qui.</p>
+        <br><br><br>
+        <img src="\images\lindz.jpeg" alt="babies" height="10%" width="50%">
+            <h3>Lindsay Hoisington</h3>
+            <p class="title">Finance Head</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quo vitae quibusdam laudantium, iure, eum distinctio blanditiis ipsa omnis sit modi atque optio dolorem non officiis pariatur quam harum qui.</p>
+            <br><br><br>
+        <img src="\images\teambrainstorming.jpg" alt="babies" height="10%" width="50%">
+            <h3>Grethel Ledesma</h3>
+            <p class="title">Accounting Head</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quo vitae quibusdam laudantium, iure, eum distinctio blanditiis ipsa omnis sit modi atque optio dolorem non officiis pariatur quam harum qui.</p>
+            <br><br><br>
+            <img src="\images\kyleformal.jpg" alt="babies" height="10%" width="50%">
+                <h3>Kyle Heidrian Esplanada</h3>
+                <p class="title">Arts Director</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quo vitae quibusdam laudantium, iure, eum distinctio blanditiis ipsa omnis sit modi atque optio dolorem non officiis pariatur quam harum qui.</p>
+               
+                <br><br><br>
+                <img src="\images\teambrainstorming.jpg" alt="babies" height="10%" width="50%">
+                    <h3>JohnFexer C. Esplanada</h3>
+                    <p class="title">Community Outreach Head</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quo vitae quibusdam laudantium, iure, eum distinctio blanditiis ipsa omnis sit modi atque optio dolorem non officiis pariatur quam harum qui.</p>
+                    <br><br><br>
+                <img src="\images\Leilani.jpeg" alt="babies" height="10%" width="50%">
+                    <h3>Lailani C. Stone</h3>
+                    <p class="title">Event Management Head</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quo vitae quibusdam laudantium, iure, eum distinctio blanditiis ipsa omnis sit modi atque optio dolorem non officiis pariatur quam harum qui.</p>
+    </div>
+           
+        </div>
+        
+       
+    
+        </body>
+</html>
+            
